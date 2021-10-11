@@ -12,8 +12,6 @@ import static java.time.format.DateTimeFormatter.ofPattern;
 
 @Data
 @AllArgsConstructor
-
-
 public class DataGenerator {
 
     public static class Filling {
@@ -34,7 +32,7 @@ public class DataGenerator {
             return meetingDay;
         }
 
-        public static String generateCityFromDropList() {
+        private static String generateCityFromDropList() {
             String[] cities = new String[]{
                     "Абакан", "Анадырь", "Архангельск", "Астрахань", "Барнаул", "Белгород",
                     "Биробиджан", "Благовещенск", "Брянск", "Великий Новгород", "Владивосток",

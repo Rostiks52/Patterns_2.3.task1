@@ -1,11 +1,7 @@
 package ru.netology.delivery.test;
 
-import com.github.javafaker.Faker;
-import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.openqa.selenium.Keys;
-
-import java.util.Locale;
 
 import static com.codeborne.selenide.Condition.*;
 import static com.codeborne.selenide.Selectors.withText;
@@ -14,12 +10,6 @@ import static com.codeborne.selenide.Selenide.open;
 import static java.time.Duration.ofSeconds;
 
 public class CardDeliveryTest {
-    private Faker faker;
-
-    @BeforeEach
-    void setUpAll() {
-        faker = new Faker(new Locale("ru"));
-    }
 
     @Test
     void shouldFillingApplication() {
