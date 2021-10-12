@@ -51,12 +51,10 @@ public class DataGenerator {
             return cities[generateRandomNumber(0, cities.length)];
         }
 
-
         public static int generateRandomNumber(int min, int max) {
             max -= min;
             return (int) (Math.random() * ++max) + min;
         }
-
 
         @Value
         public static class CustomerData {
